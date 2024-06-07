@@ -1,144 +1,186 @@
 @font-face {
-    font-family: "DIN condensed";
-    src: url('./fonts/DIN-Condensed-Font/DINCondensed-Bold.ttf') format('truetype');
+  font-family: "DIN condensed";
+  src: url('./fonts/DIN-Condensed-Font/DINCondensed-Bold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: "poppins";
-    src: url("./fonts/poppins/Poppins-Medium.ttf") format('truetype');
+  font-family: "poppins";
+  src: url("./fonts/poppins/Poppins-Medium.ttf") format('truetype');
 }
 
 body {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    justify-content: space-between;
-    margin: auto;
-   
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.first:hover,
+.second:hover,
+.third:hover,
+.fourth:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background color on hover */
+}
+
+.first:hover a,
+.second:hover a,
+.third:hover a,
+.fourth:hover a {
+  display: block; /* Show the link on hover */
+}
+
+.first a,
+.second a,
+.third a,
+.fourth a {
+  display: none; /* Hide the link by default */
+  text-decoration: none;
+  color: rgb(0, 192, 202);
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 }
 
 .first:hover {
-    border: solid 10px rgba(0, 49, 86, 0.537);
-    transition: 1s ease-in-out;
-    box-shadow: black 10px 10px 8px;
-    cursor: pointer;
+  border: solid 10px rgba(0, 49, 86, 0.537);
+  transition: 1s ease-in-out;
+  box-shadow: black 10px 10px 8px;
+  cursor: pointer;
 }
 
 .second:hover {
-    border: solid 10px rgba(0, 49, 86, 0.537);
-    transition: 1s ease-in-out;
-    box-shadow: black 10px 10px 8px;
-    cursor: pointer;
+  border: solid 10px rgba(0, 49, 86, 0.537);
+  transition: 1s ease-in-out;
+  box-shadow: black 10px 10px 8px;
+  cursor: pointer;
 }
 
 .third:hover {
-    border: solid 10px rgba(0, 49, 86, 0.537);
-    transition: 1s ease-in-out;
-    box-shadow: rgba(53, 3, 3, 0.445) 10px 10px 8px;
-    cursor: pointer;
+  border: solid 10px rgba(0, 49, 86, 0.537);
+  transition: 1s ease-in-out;
+  box-shadow: rgba(53, 3, 3, 0.445) 10px 10px 8px;
+  cursor: pointer;
 }
 
 .fourth:hover {
-    border: solid 10px rgba(0, 49, 86, 0.537);
-    transition: 1s ease-in-out;
-    box-shadow: black 10px 10px 8px;
-    cursor: pointer;
+  border: solid 10px rgba(0, 49, 86, 0.537);
+  transition: 1s ease-in-out;
+  box-shadow: black 10px 10px 8px;
+  cursor: pointer;
 }
 
-.first{
-    background:slategray;
-    width: 25%;
-    background-image: url('./assets/Image1.png');
-    background-size: cover;
-    padding-left: 30px;
-    font: bold;
+.first {
+  background: slategray;
+  width: 25%;
+  background-image: url('./assets/Image1.png');
+  background-size: cover;
+  padding-left: 30px;
+  font: bold;
+  position: relative; /* Added to position the link */
 }
 
-.second{
-    background:rgb(60, 68, 77);
-    width: 25%;
-    background-image: url('./assets/Image2.png');
-    background-size: cover;
-    font: bold;
-    padding-left: 20px;
+.second {
+  background: rgb(60, 68, 77);
+  width: 25%;
+  background-image: url('./assets/Image2.png');
+  background-size: cover;
+  font: bold;
+  padding-left: 20px;
+  position: relative; /* Added to position the link */
 }
 
-.third{
-    background:rgb(1, 45, 73);
-    width: 25%;
-    background-image: url('./assets/Image3.png');
-    background-size: cover;
-    font: bold;
-    padding-left: 20px;
+.third {
+  background: rgb(1, 45, 73);
+  width: 25%;
+  background-image: url('./assets/Image3.png');
+  background-size: cover;
+  font: bold;
+  padding-left: 20px;
+  position: relative; /* Added to position the link */
 }
 
-.fourth{
-    background:rgb(26, 52, 94);
-    width: 25%;
-    background-image: url('./assets/Image4.png');
-    background-size: cover;
-    padding-left: 20px;
-    font: bold;
+.fourth {
+  background: rgb(26, 52, 94);
+  width: 25%;
+  background-image: url('./assets/Image4.png');
+  background-size: cover;
+  padding-left: 20px;
+  font: bold;
+  position: relative; /* Added to position the link */
 }
 
-.content{
-    margin-top: 75vh;
+.content {
+  margin-top: 70vh;
 }
 
-h1{
-    color: white;
-    font-family: "DIN condensed";
+h1 {
+  color: white;
+  font-family: "DIN condensed";
 }
 
-p{
-    color: rgba(255, 255, 255, 0.614);
-    font-size: 8px;
-    font: lighter;
-    font-family: "poppins";
+p {
+  color: rgba(255, 255, 255, 0.614);
+  font-size: 12px;
+  font: lighter;
+  font-family: "poppins";
 }
-
-
 
 /* Mobile Styles */
 @media (max-width: 767px) {
-    body {
-      flex-direction: row;
-      height: 100vh;
-      justify-content: space-between;
-      display: flex;
-    }
-  
-    .first,
-    .second,
-    .third,
-    .fourth {
-      width: 100%;
-      background-size: cover;
-      background-position: center;
-    }
-  
-    .content {
-      display: none;
-    }
+  body {
+    flex-direction: row;
+    height: 100vh;
+    justify-content: space-between;
+    display: flex;
   }
-  
-  /* Tablet Styles */
-  @media (min-width: 768px) and (max-width: 1199px) {
-    body {
-      flex-direction: row;
-      height: 100vh;
-    }
-  
-    .first,
-    .second,
-    .third,
-    .fourth {
-      width: 100%;
-      background-size: cover;
-      background-position: center;
-    }
-  
-    .content {
-      margin-top: 75vh;
-    }
+
+  .first,
+  .second,
+  .third,
+  .fourth {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
   }
+
+  .content {
+    display: none;
+  }
+
+  .first a,
+  .second a,
+  .third a,
+  .fourth a {
+    display: none;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .first,
+  .second,
+  .third,
+  .fourth {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content {
+    margin-top: 70vh;
+  }
+
+  .first a,
+  .second a,
+  .third a,
+  .fourth a {
+    display: none;
+  }
+}
